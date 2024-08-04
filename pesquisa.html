@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Seu site de Viagens | MaraTuor</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="logo footer__logo">
+          <a href="index.html">M<span>a</span>r<span>a</span>T<span>u</span>o<span>r</span></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+      <ul class="nav__links">
+        <li><a href="index.html#home">Início</a></li>
+        <li><a href="index.html#destinos">Destinos Populares</a></li>
+        <li><a href="index.html#culinaria">Culinária</a></li>
+        <li><a href="index.html#trilhas">Trilhas</a></li>
+        <li><a href="index.html#favoritos">Favoritos</a></li>
+        <li><a href="index.html#sobre">Sobre nós</a></li>
+      </ul>
+      <div class="nav__btn">
+        <a href="login.html">
+          <button class="btn">LOGIN</button>
+        </a>
+      </div>
+    </nav>
+
+    <section class="section__container special__container" id="special">
+      <h2 class="section__header">DESCUBRA</h2>
+      <div class="search__container">
+        <input type="text" id="search-bar" list="suggestions" placeholder="Buscar destinos, culinária, trilhas..." onchange="handleSelection()">
+        <datalist id="suggestions">
+          <option value="Nova Iorque">
+          <option value="São José de Ribamar">
+          <option value="Carolina">
+        </datalist>
+        <button type="button" id="search-btn"><i class="ri-search-line"></i></button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="logo footer__logo">
+        <a href="#">M<span>a</span>r<span>a</span>T<span>u</span>o<span>r</span></a>
+      </div>  
+      <div class="footer__bar">
+        <br>
+        Copyright © 2024 TRILHAS INOVA MA - DESAFIO 5. Lucyene Pinheiro.
+        <br>
+        Projeto desenvolvido para o programa Trilhas INOVA
+      </div>
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
